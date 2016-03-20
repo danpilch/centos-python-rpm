@@ -12,6 +12,7 @@ RPM_PACKAGE_NAME="python-latest"
 RPM_PACKAGE_VERSION="2.7.11"
 
 echo "Installing deps"
+sudo yum -y groupinstall -y 'development tools'
 sudo yum -y install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel gem ruby-devel
 sudo gem install fpm
 
