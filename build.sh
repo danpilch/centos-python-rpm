@@ -33,7 +33,7 @@ echo "Make Python source"
 make
 
 echo "Install Python binary to packaging dir"
-make install DESTDIR=$PACKAGE_DIR
+make altinstall DESTDIR=$PACKAGE_DIR
 
 echo "Packaging Python as RPM via fpm"
 fpm -s dir -t rpm -n $RPM_PACKAGE_NAME -v $RPM_PACKAGE_VERSION -C $PACKAGE_DIR -p $BIN_DIR
