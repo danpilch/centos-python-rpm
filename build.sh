@@ -27,7 +27,7 @@ echo "Moving to Python working dir"
 cd $WORKING_DIR/$PYTHON_DIR
 
 echo "Configure Python source"
-./configure
+./configure --enable-unicode=ucs4
 
 echo "Make Python source"
 make
